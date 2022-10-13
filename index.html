@@ -7,42 +7,116 @@
     <body>
 
     <!--navigation-->
-
-    <header class="navigation">
-        <div class="inline-block logo">
-            <img src="imgs/logo.png">
+        <div class="main">
+            <nav>
+                <img class="logo" src="imgs/logo.png" width="80" height="80" alt="logo">
+                <ul>
+                    <li id="download"><a href="#">resume <img src="imgs/fluent_arrow-download-16-filled.png"></a></li>
+                    <li><a href="#">about</a></li>
+                    <li><a href="#">works</a></li>
+                    <li><a href="#">contact</a></li>
+                </ul>
+            </nav>
+            <div class="greeting">
+                <h1>hello there</h1>
+            </div>
         </div>
-        <nav class="inline-block">
-            <ul>
-                <li class="inline-block">resume</li>
-                <li class="inline-block">about</li>
-                <li class="inline-block">works</li>
-                <li class="inline-block">contact</li>
-            </ul>
-        </nav>
-    </header>  
 
     <!--hero--> 
 
-    <section class="heroImg">
+    <section class="heroGrid">
         <div class="content">
-            <img src="imgs/photo Small.png" alt="Jamie Hall" width="225" height="240">
-            <p>I'm Jamie Hall. My pronouns are she/her. I am a junior UX designer who enjoys simplifying user processes and improving accessibility. </p>
-            <button type="button">download resume</button>
+            <img src="imgs/photo Small.png" alt="my photo" width="200px" height="220px">
+            <div class="heroText">
+                <h1>I'm Jamie Hall</h1>
+                <p>My pronouns are she/her. I am a junior UX designer who enjoys simplifying user processes and improving accessibility. </p>
+                <div class="mainButtons">
+                    <div>
+                        <button>01</button>
+                        <p>work</p>
+                    </div>
+                    <div>
+                        <button>02</button>
+                        <p>about</p>
+                    </div>
+                    <div>
+                        <button>03</button>
+                        <p>skills</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>   
 
-    <!--about--> 
-    <!--skills--> 
     <!--works--> 
     
+    <section class="myWorks">
+        <h1>works</h1>
+        <div class="workGrid">
+            <div>
+                <img src="imgs/Home Page Small.png" alt="DOI">
+            </div>
+            <div>
+                <h4>U.S. Department of the Interior</h4>
+                <p>usability testing & redesign</p>
+                <p>improving site function, engagement, and intuitiveness</p>
+                <button class="viewWork">view case study</button>
+            </div>
+            <div>
+                <img src="imgs/diy screens.png" alt="mydiy">
+            </div>
+            <div>
+                <h4>MyDIY</h4>
+                <p>innovation for user needs</p>
+                <p>creating a multifunctional DIY resource app</p>
+                <button class="viewWork">view case study</button>
+            </div>
+        </div>
+        <button class="viewWork">view all projects</button>
+        </section>
+
+    <!--about--> 
+
+<section class="aboutMe">
+    <img src="imgs/nadja.jpeg" alt="I'm going to change my pictures when I get them shot in November!!" width="200px" height="220px">
+    <div class=".flexContainer">
+        <div class="aboutText"></div>
+            <h1>about me</h1>
+            <p>Based in Greenville, SC, I am a junior UX Designer with specializations including research, wireframing, and prototyping. I can help you create inspiring, memorable experiences that people will want to revisit. You can download my resume by clicking <a href="">here.</a></p>
+    </div>
+</section>
+
+    <!--skills--> 
+
+<section class="mySkills">
+    <h1>skills</h1>
+    <div class="flexContainer row">
+        <div>
+            <h3>research</h3>
+            <p>survey creation - data synthesis - competitor analysis - affinity diagrams</p>
+        </div>
+        <div>
+            <h3>graphic design</h3>
+            <p>front end development - color theory - typography - aesthetics - branding</p>
+        </div>
+        <div>
+            <h3>ui design</h3>
+            <p>information architecture - copywriting - layouts - accessibility - redlining</p>
+        </div>
+        <div>
+            <h3>communication</h3>
+            <p>writing - empathy - collaboration - project management - user interviews</p>
+        </div>
+    </div>
+</section>
+
     <!--footer--> 
 
     <footer class="footer">
         <ul>
-            <li class="inline-block">about</li>
-            <li class="inline-block">works</li>
-            <li class="inline-block">contact</li>
+            <li><a href="#">about</a></li>
+            <li><a href="#">works</a></li>
+            <li><a href="#">contact</a></li>
         </ul>
     </footer>    
     </body>

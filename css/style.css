@@ -1,49 +1,63 @@
 /* navigation */
 
-.inline-block {
-    display: inline-block;
-    vertical-align: top;
+nav {
+    display: flex;
+    width: 100%;
+    padding-top: 10px;
+    padding-left: 2%;
+    padding-right: 2%;
+    align-items: center;
+    outline: 1px solid purple;
 }
 
 .logo {
-    width: 80px;
-    height: 80px;
     padding: 1%;
-}
-
-.navigation {
-    display: inline-block;
-    height: 65px;
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 100px;
-    vertical-align: top;
+    float: left;
+    outline: 1px solid gray;
 }
 
 nav ul {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
-    gap: 250px;
-    position: absolute;
+    list-style-type: none;
+    justify-self: center;
     width: auto;
-    height: 58px;
-    left: 198px;
-    top: 8px;   
+    outline: 1px solid black;
+
+}
+
+nav ul li {
+    display: inline-block;
+    list-style-type: none;
+    padding: 10px 80px; 
+    margin: 1%;
+    outline: 1px solid red;
+    justify-content: center;
+}
+
+nav a {
+    color: black;
+    text-decoration: none;
+}
+
+.greeting {
+    text-align: center;
+    width: auto;
+    margin: auto;
+    outline: 1px solid orange;
 }
 
 /* hero */
 
-.heroImg {
+.heroGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     height: 600px;
-    width: auto;
-    padding: 25px;
-    margin: auto;
     background-color:rgba(247, 243, 240, 0.6);
+    padding: 1%;
+    outline: 1px solid green;
+    margin: auto;
 }
-
 
 .content {
    width: 700px;
@@ -51,77 +65,146 @@ nav ul {
    margin: 0 auto;
    padding: 25px;
    text-align: center;
+   outline: 1px solid blue;
 }
 
-.content p {
-    width: 50%;
-    padding: 25px;
-    align-content: center;
+.heroText {
+    text-align: left;
+    outline: 1px solid pink;
+    padding: 1%;
+
 }
 
 .content img {
-    border-radius: 50%;
+    border-radius:50%;
     float: right;
     padding: 25px;
 }
 
-button {
-    padding: 6px, 30px, 6px, 30px;
-    font-family: 'Aktiv Grotesk Ex';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    background-color: #5D7466;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
-    border-radius: 5px;
+.mainButtons {
+    display: flex;
+    border-radius: 50%;
+    margin: 1px;
+    justify-content: space-between;
 }
+
+
+/* works - CSS Grid*/
+
+.workGrid {
+    display: grid;
+}
+
+
+/* about - CSS Flex */
+
+.aboutMe {
+    display: flex;
+    background-color:rgba(247, 243, 240, 0.6);
+    padding: 1%;
+}
+
+.aboutMe img {
+    border-radius: 50%;
+}
+
+/* skills - CSS Flex */
+
+.mySkills {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 1%;
+    padding: 1%;
+
+}
+
+.flexContainer div {
+    display: flex;
+    flex-direction: column;
+    width: 33%;
+    margin: auto;
+    padding: 1%;
+    align-items: center;
+
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.flexContainer p {
+    width: auto;
+    text-align: center;
+}
+
+/* contact */
 
 /* footer */
 
 .footer {
-    height: 200px;
-    width: 100%;
-    background-color:#DDD7CB; 
     display: inline-block;
-    vertical-align: top;
-    
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    background-color: #63636371;
 }
 
 .footer li {
-    flex-direction: row;
-    padding: 10px;   
+    text-align: center;
+    width: 100%;
+    color: black;
+    text-decoration: none;
 }
 
 /* text */
 
 li {
     font-weight: bold;
-    display: flex;
     font-family: 'Aktiv Grotesk Ex';
     font-style: normal;
     font-weight: 400;
-    font-size: 14px;
+    font-size: 12px;
     line-height: 18px;
-    text-align: center;
     text-transform: uppercase;
+    list-style: none;
 }
 
 h1 {
     font-family: 'AWConqueror Std Didot';
     font-style: normal;
     font-weight: 400;
-    font-size: 48px;
-    line-height: 66px;
+    font-size: 36px;
+    line-height: 48px;
     text-transform: uppercase;
+}
+
+h3 {
+    font-family: 'Aktiv Grotesk Ex';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 26px;
+    text-transform: uppercase;
+}
+
+a:-webkit-any-link {
+    color: black;
+    cursor: pointer;
+    text-decoration: none;
 }
 
 p {
     font-family: 'Aktiv Grotesk Ex';
     font-style: normal;
     font-weight: 400;
-    font-size: 20px;
+    font-size: 12px;
     line-height: 26px;
     text-align: justify;    
+    text-decoration: none;
 }
 
 /* style */ 
